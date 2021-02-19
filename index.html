@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Get Started with ActiveReportsJS Report Viewer & Designer Components</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Report Viewer UI themes: -->
+  <!-- Default AR Theme -->
+  <link rel="stylesheet" href="https://cdn.grapecity.com/activereportsjs/2.latest/styles/ar-js-ui.css" />
+  <link rel="stylesheet" href="https://cdn.grapecity.com/activereportsjs/2.latest/styles/ar-js-designer.css" />
+  <link rel="stylesheet" href="https://cdn.grapecity.com/activereportsjs/2.latest/styles/ar-js-viewer.css" />
+  <!-- Light Blue Theme -->
+  <link rel="stylesheet" class="ar-theme-light-blue" media="not all" href="https://cdn.grapecity.com/activereportsjs/2.latest/styles/light-blue-ui.css" />
+  <link rel="stylesheet" class="ar-theme-light-blue" media="not all" href="https://cdn.grapecity.com/activereportsjs/2.latest/styles/light-blue-designer.css" />
+  <link rel="stylesheet" class="ar-theme-light-blue" media="not all" href="https://cdn.grapecity.com/activereportsjs/2.latest/styles/light-blue-viewer.css" />
+  <!-- Green Theme -->
+  <link rel="stylesheet" class="ar-theme-green" media="not all" href="https://cdn.grapecity.com/activereportsjs/2.latest/styles/green-ui.css" />
+  <link rel="stylesheet" class="ar-theme-green" media="not all" href="https://cdn.grapecity.com/activereportsjs/2.latest/styles/green-designer.css" />
+  <link rel="stylesheet" class="ar-theme-green" media="not all" href="https://cdn.grapecity.com/activereportsjs/2.latest/styles/green-viewer.css" />
+  <!-- Dark Yellow Theme -->
+  <link rel="stylesheet" class="ar-theme-dark-yellow" media="not all" href="https://cdn.grapecity.com/activereportsjs/2.latest/styles/dark-yellow-ui.css" />
+  <link rel="stylesheet" class="ar-theme-dark-yellow" media="not all" href="https://cdn.grapecity.com/activereportsjs/2.latest/styles/dark-yellow-designer.css" />
+  <link rel="stylesheet" class="ar-theme-dark-yellow" media="not all" href="https://cdn.grapecity.com/activereportsjs/2.latest/styles/dark-yellow-viewer.css" />
+
+  <link rel="stylesheet" href="main.css">
+
+  <!-- This library contains the supplemental code that is required to get ActiveReportsJS components worked within Internet Explorer 11.  -->
+  <script src="https://cdn.grapecity.com/activereportsjs/2.latest/dist/ie-polyfills.js" nomodule></script>
+  <!-- This library contains the core functionality and exposes several types that you can use within an application's code. -->
+  <script src="https://cdn.grapecity.com/activereportsjs/2.latest/dist/ar-js-core.js"></script>
+  <!-- This library contains the Report Designer component. -->
+  <script src="https://cdn.grapecity.com/activereportsjs/2.latest/dist/ar-js-designer.js"></script>
+  <!-- This library contains the Report Viewer component. -->
+  <script src="https://cdn.grapecity.com/activereportsjs/2.latest/dist/ar-js-viewer.js"></script>
+  <!-- This library contains the code that allows exporting reports to PDF format. -->
+  <script src="https://cdn.grapecity.com/activereportsjs/2.latest/dist/ar-js-pdf.js"></script>
+  <!-- This library contains the code that allows exporting reports to XLSX format -->
+  <script src="https://cdn.grapecity.com/activereportsjs/2.latest/dist/ar-js-xlsx.js"></script>
+  <!-- This library contains the code that allows exporting reports to HTML format -->
+  <script src="https://cdn.grapecity.com/activereportsjs/2.latest/dist/ar-js-html.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div id="list-host">
+      <div class="flex-grow-1">
+        <div class="list-title">Reports:</div>
+        <ul id="reports-list" class="list"></ul>
+      </div>
+      <div class="flex-grow-0">
+        <div class="list-title">Themes:</div>
+        <ul id="themes-list" class="list"></ul>
+      </div>
+    </div>
+    <div id="host">
+      <div id="arjs-designer-host" class="hidden"></div>
+      <div id="arjs-viewer-host"></div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
